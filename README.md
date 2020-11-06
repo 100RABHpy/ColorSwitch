@@ -21,5 +21,4 @@ Now to set upstream do this.
 `git remote update`  
 Now you have updated copy of repo. As you have added upstream, everytime you make a commit you should only do last step(`git remote update`).
 
-## How to sync your local repo with upstream's remote repo after making changes.(Incase of  forked repo only)
-Follow this tutorial for this. [Tutorial](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+
