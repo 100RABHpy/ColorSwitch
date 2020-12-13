@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane onMouseClicked="#startGame" prefHeight="740.0" prefWidth="480.0" style="-fx-background-color: #2a2929;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.mainGameController">
+   <children>
+      <Label fx:id="startGameLabel" layoutX="134.0" layoutY="618.0" prefHeight="66.0" prefWidth="228.0" text="CLICK TO START GAME" textFill="#eeeaea" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="126.0">
+         <font>
+            <Font name="SansSerif Regular" size="20.0" />
+         </font>
+      </Label>
+      <Circle fx:id="ball" fill="#00c2cb" layoutX="240.0" layoutY="580.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="231.0" />
+      <ImageView fx:id="c1" fitHeight="160.0" fitWidth="165.0" layoutX="160.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" rotate="-38.7" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0">
+         <image>
+            <Image url="@../Style/Images/circle.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="starCountLabel" layoutX="-1.0" layoutY="6.0" prefHeight="95.0" prefWidth="57.0" text="0" textFill="#fdfffd" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="SansSerif Regular" size="82.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Circle fill="#6e7072" layoutX="434.0" layoutY="48.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="419.0" layoutY="24.0" stroke="TRANSPARENT" strokeType="INSIDE" width="12.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="437.0" layoutY="24.0" stroke="TRANSPARENT" strokeType="INSIDE" width="12.0" />
+      <ImageView fx:id="c2" fitHeight="160.0" fitWidth="165.0" layoutX="159.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0">
+         <image>
+            <Image url="@../Style/Images/circle.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="377.0" layoutY="95.0" prefHeight="45.0" prefWidth="104.0" text="Press Space Bar &#10;to Pause" textAlignment="CENTER" textFill="#fffdfd" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="SansSerif Regular" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
