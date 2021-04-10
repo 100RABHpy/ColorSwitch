@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="740.0" prefWidth="480.0" style="-fx-background-color: #2a2929;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.GamePlay">
+   <children>
+      <ImageView fitHeight="281.0" fitWidth="281.0" layoutX="94.0" layoutY="409.0" onMouseClicked="#newGame" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Style/Images/resume.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="101.0" layoutX="6.0" layoutY="7.0" onMouseClicked="#backToMainMenu" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Style/Images/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="281.0" fitWidth="281.0" layoutX="94.0" layoutY="102.0" onMouseClicked="#restartGame" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Style/Images/restart.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="totalStarCount" layoutX="426.0" layoutY="4.0" text="0" textFill="#f8f7f7">
+         <font>
+            <Font name="SansSerif Regular" size="71.0" />
+         </font>
+      </Label>
+      <Label layoutX="422.0" layoutY="73.0" text="STAR" textFill="#f5efef">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="notEnoughStar" layoutX="157.0" layoutY="48.0" text="Not Enough Star" textFill="#eb0909">
+         <font>
+            <Font name="SansSerif Regular" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
